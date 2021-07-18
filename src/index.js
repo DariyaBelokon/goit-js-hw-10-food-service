@@ -54,6 +54,7 @@ refs.themeBtn.addEventListener("change", changeTheme);
 const getThemeFromLocalStorage = () => {
     const savedTheme = localStorage.getItem('pageTheme');
     if (savedTheme) {
+        refs.themeBtn.checked = true;
         refs.body.classList.add(Theme.DARK);    
     }
 }
